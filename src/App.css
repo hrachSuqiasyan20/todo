@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+.cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cont-item{
+  width: 350px;
+  height:auto;
+  box-shadow: 0 0 2px;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header > input{
+  width: 100%;
+  outline: none;
+  padding: 8px 3px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.btn{
+  width: 60px;
+  border: none;
+  background-color: rgb(91, 223, 91);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul{
+  padding: 0;
+}
+
+.todo-par{
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+
+.todoListItem{
+   display: flex;
+   justify-content: space-between;
+}
+
+.checkBox{
+  display: flex;
+  gap: 10px;
+}
+
+
+li{
+  list-style: none;
+}
+
+.delete{
+  width: 30px;
+  background-color: red;
+  font-size: 12px;
+}
+
+.todoFoot{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cancel{
+  width: 200px;
+  height: 35px;
+  font-size: 15px;
+  background: rgb(172, 7, 7);
 }
